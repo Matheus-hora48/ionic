@@ -6,25 +6,40 @@ import { NavController } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit{
+export class HomePage implements OnInit {
 
-  constructor(private navegacao: NavController) { }
+	public resultado: String = ""
+	public titulo: String = "Meu primeiro App"
+	public imagemRandomica: String = "https://source.unsplash.com/random/200x200"
+	public imagemLocal: String = "../assets/icone-celular.png"
 
-  ngOnInit() {
-  }
+	constructor(private navegacao: NavController) { }
 
-  abrirBotoes(){
-    this.navegacao.navigateForward('botoes')
-  }
+  	ngOnInit() {
+  	}
 
-  abrirLista(){
-    this.navegacao.navigateForward('lista')
-  }
+  	recuperar() {
+		this.resultado = this.nome
+	}
 
-  public titulo: String = "Meu primeiro App"
-  public imagemRan: String = "https://source.unsplash.com/800x800"
+	abrirBotoes() {
+		this.navegacao.navigateForward('botoes')
+	}
 
-  public atualiza():void{
-    this.titulo = 'Texto alterado'
-  }
+	abrirLista() {
+		this.navegacao.navigateForward('lista')
+	}
+
+	public atualiza(): void {
+
+		this.titulo = "Texto alterado"
+
+	}
+
+	public acao(): void {
+
+		this.titulo = "Botão clicado"
+
+	}
+
 }

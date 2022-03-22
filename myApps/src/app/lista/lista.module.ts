@@ -1,19 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ListaPageRoutingModule } from './lista-routing.module';
-
 import { ListaPage } from './lista.page';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ListaPage
+  }
+];
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ListaPageRoutingModule
+    RouterModule.forChild(routes)
   ],
   declarations: [ListaPage]
 })
