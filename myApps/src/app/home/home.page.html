@@ -6,10 +6,107 @@
 
 <ion-content [fullscreen]="true">
 
-  <h4></h4>
+  <h4>Grid</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">Conteúdo 1</ion-col>
+      <ion-col size="3">Conteúdo 2</ion-col>
+    </ion-row>
+  </ion-grid>
 
+  <h4>Grid offset</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">Conteúdo 1</ion-col>
+      <ion-col size="3" offset="3">Conteúdo 2</ion-col>
+    </ion-row>
+  </ion-grid>
 
- <!--
+  <h4>Grid alinhamento de texto(ion-text-start, ion-text-end, ion-text-center)</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-start" size="4">Conteúdo 1</ion-col>
+      <ion-col class="ion-text-center" size="4">Conteúdo 2</ion-col>
+      <ion-col class="ion-text-end" size="4">Conteúdo 3</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h4>Grid alinhamento vertical</h4>
+  <ion-grid>
+    <ion-row class="ion-align-items-start" >
+      <ion-col size="4">Conteúdo 1</ion-col>
+      <ion-col size="4">Conteúdo 2</ion-col>
+      <ion-col size="4">Conteúdo 3 <br>+<br>+ </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-center" >
+      <ion-col size="4">Conteúdo 1</ion-col>
+      <ion-col size="4">Conteúdo 2</ion-col>
+      <ion-col size="4">Conteúdo 3 <br>+<br>+ </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-end" >
+      <ion-col size="4">Conteúdo 1</ion-col>
+      <ion-col size="4">Conteúdo 2</ion-col>
+      <ion-col size="4">Conteúdo 3 <br>+<br>+ </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--
+  <h4>Entrada de dados(floating, fixed e stacked)</h4>
+  <ion-item>
+    <ion-label position="floating">Seu nome:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <h4>Entrada de dados(value, placeholder, clearinput)</h4>
+  <ion-item>
+    <ion-input clearInput placeholder="Digite seu nome"></ion-input>
+  </ion-item>
+
+  <h4>Tipos de entrada de dados(text, number, password, email, tel, url, search)</h4>
+
+  Muda o tipo de teclado
+  <ion-item>
+    <ion-label>Texto:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Número:</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Senha:</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Email:</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Telefone:</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Url:</ion-label>
+    <ion-input type="url"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Search:</ion-label>
+    <ion-input type="search"></ion-input>
+  </ion-item>
+
+ 
   <h4>Listas</h4>
   <ion-list>
     <ion-item>
