@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  public titulo: String = "Meu primeiro App"
+  public imagemRan: String = "https://source.unsplash.com/800x800"
 
+  public atualiza():void{
+    this.titulo = 'Texto alterado'
+  }
 }
